@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+
+\usepackage[french]{babel}
+
+\title{\textbf{Cahier des charges}}
+\author{Fabien BUISSON, Ravi PACHY}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\section{Fonctionalités}
+
+\subsection{Site}
+\label{sub:site}
+
+\subsubsection{Utilisateurs}
+
+Le site doit pouvoir gérer plusieurs types d'utilisateurs.
+Un utilisateur est soit :
+\begin{enumerate}
+  \item admin global
+  \item structure
+  
+  \item personne
+\end{enumerate}
+
+\subsubsection{Relations}
+
+Voir classeur Relations
+
+{\bf Ami}\\[0.6em]
+
+{\bf Abonné}\\[0.6em]
+{\bf Membre}\\[0.6em]
+{\bf Organisateur}\\[0.6em]
+{\bf Dirigeant}\\[0.6em]
+
+\subsubsection{Divers}
+Le site doit proposer un moyen simple d'être traduit dans plusieurs langues.
+
+\subsection{Admin global}
+
+
+% subsection  (end)
+
+
+\subsection{Fonctionalités communes (Structures/Personnes)}
+
+\subsubsection{Agenda}
+\label{ssub:}
+
+Tout utilisateur a à sa disposition un agenda modifiable dans lequel il peut créer des évènements.
+L'agenda est composé des évènements de l'utilisateurs et ceux organisés par les amis et structures  auxquelles on est soit membre soit abonné.
+
+\subsubsection{Évènements}
+
+Les évènements peuvent êtres publiés sur la page de l'utilisateur.
+
+
+\subsubsection{Articles}
+\label{ssub:}
+
+% subsubsection  (end)
+Tout utilisateur doit pouvoir publier des articles et des évènements datés.
+L'utilisateur doit pouvoir gérer un calendrier personnel.
+Un utilisateur a une page personnelle qu'il peut gérer.
+
+\subsection{Personne}
+
+Une page personnelle contient les éléments publiés par l'utilisateur (c'est un accueil).
+L'acceuil affiche les publications :
+  - des structures auxquelles on est membre ou auxquelles on est "abonné".
+  - des membres "amis"
+L'utilisateur doit pouvoir gérer le niveau de confidentialité de toute information le concernant.
+
+\subsection{Structure}
+
+Une structure est un utilisateur mais :
+  - il est amis uniquement avec d'autres
+
+
+
+\end{document}
