@@ -1,83 +1,220 @@
-\documentclass[11pt]{article}
+\documentclass[11pt]{report}
 
 \usepackage[french]{babel}
-
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\usepackage[scale=0.8]{geometry}
 \title{\textbf{Cahier des charges}}
-\author{Fabien BUISSON, Ravi PACHY}
+\author{SBOUB}
 \date{\today}
+\setcounter{tocdepth}{3}     % Dans la table des matieres
 \begin{document}
-
 \maketitle
 
-\section{Fonctionalités}
+\tableofcontents
 
-\subsection{Site}
-\label{sub:site}
+\chapter{Statuts}
 
-\subsubsection{Utilisateurs}
+L'intégralité du contenu (dossier de conception, codes sources) est sous licence gpl, lgpl ou toute licence libre hormis le contenu ajouté par l'utilisateur qui est sous son entière responsabilité.\\
+Chaque utilisateur à le droit de contrôle, modification, suppression de toute information ou contenu le concernant directement.
 
-Le site doit pouvoir gérer plusieurs types d'utilisateurs.
-Un utilisateur est soit :
-\begin{enumerate}
-  \item admin global
-  \item structure
-  
-  \item personne
-\end{enumerate}
-
-\subsubsection{Relations}
-
-Voir classeur Relations
-
-{\bf Ami}\\[0.6em]
-L'amitié est réservée à deux personnes.
-{\bf Abonné}\\[0.6em]
-{\bf Membre}\\[0.6em]
-{\bf Organisateur}\\[0.6em]
-{\bf Dirigeant}\\[0.6em]
-
-\subsubsection{Divers}
-Le site doit proposer un moyen simple d'être traduit dans plusieurs langues.
-
-\subsection{Admin global}
+Toute suppression de données est définitive.
 
 
-% subsection  (end)
+%\chapter{Fonctionalités}
+
+%\section{Site}
+%\label{sub:site}
+
+%\subsection{Utilisateurs}
+
+%Le site doit pouvoir gérer plusieurs types d'utilisateurs.
+%Un utilisateur est soit : \\
+
+%{\bf Admin global}\\[0.6em]
+%L'administrateur général du site.
+
+%{\bf Structure}\\[0.6em]
+
+%{\bf Personne}\\[0.6em]
+
+%\subsection{Relations}
+
+%\begin{table}[h]
+%\center
+%\begin{tabularx}{15cm}{|r|X|X|X|}
+%	\hline
+%	& Admin Global & Structure & Personne \\
+%	\hline
+%	Admin Global & - & - & - \\
+%	\hline
+%	Structure & - & Abonné & Abonné $<$ Organisateur $<=$ Dirigeant \\
+%	\hline
+%	Personne & - & Abonné $<$  Organisateur $<=$ Dirigeant & Ami \\
+%	\hline 
+%\end{tabularx}
+%\caption{Relations entre les différents types d'utilisateurs}
+%\end{table}
 
 
-\subsection{Fonctionalités communes (Structures/Personnes)}
+%{\bf Ami}\\[0.6em]
+%L'amitié est réservée à deux personnes.La relation d'amitié permet de recevoir et de partager les publications d'un ami (=personne).
+%Une publication peut être partagée à un sous-ensemble choisi d'ami.\\
 
-\subsubsection{Agenda}
-\label{ssub:}
+%{\bf Abonné}\\[0.6em]
+%Un abonné est une personne ou une structure qui souhaite recevoir certaines publications d'une autre structure.\\
 
-Tout utilisateur a à sa disposition un agenda modifiable dans lequel il peut créer des évènements.
-L'agenda est composé des évènements de l'utilisateurs et ceux organisés par les amis et structures  auxquelles on est soit membre soit abonné.
+%{\bf Organisateur}\\[0.6em]
+%Un organisateur est une personne qui joue un rôle au sein d'une structure.
+%Une personne peut faire partie de l'organisation de plusieurs structures.\\
 
-\subsubsection{Évènements}
+%{\bf Dirigeant}\\[0.6em]
+%Le dirigeant est une personne qui occupe une place unique au sein d'une structure.
+%Une personne peut être dirigeant de plusieurs structures.
 
-Les évènements peuvent êtres publiés sur la page de l'utilisateur.
+%\subsection{Divers}
+%Le site doit proposer un moyen simple d'être traduit dans plusieurs langues.
+
+%\section{Admin global}
 
 
-\subsubsection{Articles}
-\label{ssub:}
+%% subsection  (end)
 
-% subsubsection  (end)
-Tout utilisateur doit pouvoir publier des articles et des évènements datés.
-L'utilisateur doit pouvoir gérer un calendrier personnel.
-Un utilisateur a une page personnelle qu'il peut gérer.
 
-\subsection{Personne}
+%\section{Fonctionalités communes (Structures/Personnes)}
 
-Une page personnelle contient les éléments publiés par l'utilisateur (c'est un accueil).
-L'acceuil affiche les publications :
-  - des structures auxquelles on est membre ou auxquelles on est "abonné".
-  - des membres "amis"
-L'utilisateur doit pouvoir gérer le niveau de confidentialité de toute information le concernant.
+%\subsection{Agenda}
+%\label{ssub:}
 
-\subsection{Structure}
+%Tout utilisateur a à sa disposition un agenda modifiable dans lequel il peut créer des évènements.
+%L'agenda est composé des évènements de l'utilisateurs et ceux organisés par les amis et structures  auxquelles on est soit membre soit abonné.
 
-Une structure est un utilisateur mais :
-  - il est amis uniquement avec d'autres
+%\subsection{Évènements}
+
+%Les évènements peuvent êtres publiés sur la page de l'utilisateur.
+
+
+%\subsection{Articles}
+%\label{ssub:}
+
+%% subsubsection  (end)
+%Tout utilisateur doit pouvoir publier des articles et des évènements datés.
+%L'utilisateur doit pouvoir gérer un calendrier personnel.
+%Un utilisateur a une page personnelle qu'il peut gérer.
+
+%\section{Personne}
+
+%Une page personnelle contient les éléments publiés par l'utilisateur (c'est un accueil).
+%L'acceuil affiche les publications :
+%  - des structures auxquelles on est membre ou auxquelles on est "abonné".
+%  - des membres "amis"
+%L'utilisateur doit pouvoir gérer le niveau de confidentialité de toute information le concernant.
+
+%\section{Structure}
+
+%Une structure est un utilisateur mais :
+%  - il est amis uniquement avec d'autres
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Fonctionnalités}
+
+	\section{Plugins}
+	\section{Publication}
+	 % Une publi c'est un mix du contenu des plugins
+	\section{Répartition des fonctionnalités}
+
+\chapter{Plugin}
+	\section{Définition}
+		% Un nom, des types, des tags
+	  % c'est normé, ça produit de la publication
+	\section{Base}
+		\subsection{Editeur WYSIWYG}
+		\subsection{Formulaire}
+		\subsection{Média}
+			\subsection{Photo}
+			\subsection{Video}
+			\subsection{Fichiers}	
+		\subsection{Agenda}
+	\section{Tiers}
+		\subsection{Afficheur de chromosome}
+
+\chapter{Tags}
+
+	\section{Le rôle}
+	% C'est associé à une publication
+	
+
+\chapter{Utilisateurs}
+	
+	\section{Administrateur global}
+		\subsection{Rôle}
+		\subsection{Droits}
+	\section{Personne}
+		\subsection{Rôle}
+		\subsection{Droits}
+			% Une personne a le droit de filtrer ce qu'il recoit
+	\section{Structure}
+		\subsection{Rôle}
+			% ça représente une entité associative/administrative
+			% capable de partager du contenu relatif à son rôle réel (irl)%
+		\subsection{Gestion}
+			% Ya un compte associé à la structure
+			% Ya un "dirigeant" qui est une personne et qui a tous les droits de la structure
+		\subsection{Droits}
+			% creer des "groupes" internes
+			% Une structure decide de la portée de ses publications
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
